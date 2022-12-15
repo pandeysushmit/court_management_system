@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+.user-cart span {
+    background-color: #3B3131;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: -1.2rem;
+}
+
+.card {
+    background-color: #37c2e9c3;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 5px 5px #3B3131;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #37c2e9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar .side-header {
+    margin-left: 20px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.sidebar a:hover {
+    background-color: #3793e9c3;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 34px;
+    margin-left: 50px;
+    background-color: #3793e9c3;
+}
+.sidebar.closebtn:hover {
+    /* position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 34px;
+    margin-left: 50px; */
+    background-color: #3793e9c3;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    background-color: #ffffff;
+}
+
+.openbtn:hover {
+    color: #ffffff;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/************************** product table styling *********************************/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 50px;
+}
+
+td,
+th {
+    padding: 10px 16px;
+    text-align: center;
+}
+
+th {
+    background-color: #584e46;
+    color: #fafafa;
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: bold;
+}
+
+tr {
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
